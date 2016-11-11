@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<script src="http://apps.bdimg.com/libs/prototype/1.7.1.0/prototype.js"></script>
+
+</head>
+<body>
+	
+<input type="text" id="myText"   value="input text">
+<script>
+// 继承的演示
+function base() {
+    this.member = " dnnsun_Member";
+    this.method = function() {
+        window.alert(this.member);
+    }
+}
+function extend() {
+    base.call(this);
+    window.alert(member);
+    window.alert(this.method);
+}
+extend();
+</script>
+	</body>
+</html>
